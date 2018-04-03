@@ -31,12 +31,12 @@
 
               <form class="ui-form" name="myForm" action="" method="post" onsubmit="return changePassword()">
                 <p class="error" id="oldpassworderror"></p>
-                <input type="password" name="oldpassword" placeholder="old password"><br><br>
+                <input type="password" name="oldpassword" placeholder="old password"><span id="oldpasswordsuccess"></span><br><br>
                 <p class="error" id="newpassworderror"></p>
-                <input type="password" name="newpassword" placeholder="new password"><br><br>
+                <input type="password" name="newpassword" placeholder="new password"><span id="oldpasswordsuccess"></span><br><br>
                 <p class="error" id="confirmpassworderror"></p>
-                <input type="password" name="confirmpassword" placeholder="confirm new password"><br><br>
-                <input type="submit" name="change-password" value="change-password">
+                <input type="password" name="confirmpassword" placeholder="confirm new password"><span id="oldpasswordsuccess"></span><br><br>
+                <input type="submit" name="change-password" value="change password">
               </form>
             </div>
           </div>

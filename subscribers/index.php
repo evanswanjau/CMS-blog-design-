@@ -1,4 +1,4 @@
-
+<?php require_once '../engine/infused_cogs.php'; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -37,16 +37,17 @@
                 <input type="submit" name="send-message" value="send message">
               </form>
             </div>
-            <div class="mini-board excess">
+            <div class="mini-board">
 
               <h3>Subscribers</h3>
 
               <table style="width:50%">
                 <tr>
+                  <th>#</th>
                   <th>email</th>
                   <th>phone number</th>
                 </tr>
-                <?php //getSubscribers(); ?>
+                <?php getSubscribers(); ?>
               </table>
             </div>
           </div>
