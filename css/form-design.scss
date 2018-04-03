@@ -1,0 +1,52 @@
+///////////////// user forms
+.ui-form{
+  padding:3% 0%;
+  font-family:$main-font;
+
+
+  input[type='text'], [type='password'], select, textarea{
+    border:1px solid $subtle-color;
+    padding:1%;
+    width:50%;
+    border-radius:3px;
+    font-family:$main-font;
+    -webkit-transition:border .5s;
+    outline: 0;
+  }
+
+  input[type='text']:focus, input[type='password']:focus, select:focus, textarea:focus, input[type='file']:hover{
+    border:1px solid $theme-color;
+  }
+
+  input[type='file']{
+    border:1px solid $subtle-color;
+    padding:5% 1%;
+    width:50%;
+    cursor:pointer;
+    border-radius:3px;
+    font-family:$main-font;
+    -webkit-transition:border .5s;
+    outline: 0;
+  }
+
+  input[type='submit']{
+    padding:1% 2% 1.2% 2%;
+    background-color:$button;
+    border:none;
+    outline:0;
+    color:$alternate;
+    border-radius:3px;
+    font-family:$main-font;
+    -webkit-transition: background .5s;
+    outline: 0;
+  }
+
+  input[type='submit']:hover{
+    background-color:$button * .7;
+    cursor: pointer;
+  }
+
+  input[type='submit']:active{
+    background-color:$theme-color * .8;
+  }
+}

@@ -1,0 +1,48 @@
+// assignments
+$errors:#FF6868;
+$main-font:'Nunito', sans-serif;
+$theme-color:#282C34;
+$subtle-color:#cecece;
+$alternate:#fff;
+$button:#808080;
+
+body{
+  background-color:#e9e9e9;
+}
+
+
+// messages
+.error{
+  padding:.5%;
+  width:30%;
+  border-radius:3px;
+  color:$alternate;
+  background-color:$alternate;
+  -webkit-transition:background .5s;
+}
+
+.side-menu{
+  background-color:$theme-color;
+  height:100vh;
+  overflow-y:scroll;
+}
+
+.right-module{
+  font-family:$main-font;
+
+  h3{
+    padding:1% 0%;
+    border-bottom:1px solid rgba($theme-color, .5);
+    width:50%;
+  }
+}
+
+.mini-board{
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+  padding:1% 2%;
+  margin:2% 0%;
+  background-color:$alternate;
+}
+
+// imports
+@import "form-design";
