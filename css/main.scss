@@ -1,5 +1,6 @@
 // assignments
 $errors:#FF6868;
+$success:#3FFF7E;
 $main-font:'Nunito', sans-serif;
 $theme-color:#282C34;
 $subtle-color:#cecece;
@@ -19,6 +20,11 @@ body{
   color:$alternate;
   background-color:$alternate;
   -webkit-transition:background .5s;
+}
+
+.success{
+  @extend .error;
+  background-color:$alternate;
 }
 
 .side-menu{

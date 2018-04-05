@@ -29,13 +29,14 @@
 
               <h3>Change password</h3>
 
-              <form class="ui-form" name="myForm" action="" method="post" onsubmit="return changePassword()">
+              <form class="ui-form" name="myForm" action="" method="post" onsubmit="return updatePassword()">
+                <p class="success" id="successmessage"></p>
                 <p class="error" id="oldpassworderror"></p>
-                <input type="password" name="oldpassword" placeholder="old password"><span id="oldpasswordsuccess"></span><br><br>
+                <input type="password" name="oldpassword" placeholder="old password" onkeyup="confirmOldPassword(this.value)"><span id="oldpasswordsuccess"></span><br><br>
                 <p class="error" id="newpassworderror"></p>
-                <input type="password" name="newpassword" placeholder="new password"><span id="oldpasswordsuccess"></span><br><br>
+                <input type="password" name="newpassword" placeholder="new password" onkeyup="confirmNewPassword(this.value)"><span id="newpasswordsuccess"></span><br><br>
                 <p class="error" id="confirmpassworderror"></p>
-                <input type="password" name="confirmpassword" placeholder="confirm new password"><span id="oldpasswordsuccess"></span><br><br>
+                <input type="password" name="confirmpassword" placeholder="confirm new password" onkeyup="confirmSecondPassword(this.value)"><span id="confirmpasswordsuccess"></span><br><br>
                 <input type="submit" name="change-password" value="change password">
               </form>
             </div>

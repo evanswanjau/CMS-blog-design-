@@ -1,13 +1,16 @@
 body {
   background-color: #e9e9e9; }
 
-.error {
+.error, .success {
   padding: .5%;
   width: 30%;
   border-radius: 3px;
   color: #fff;
   background-color: #fff;
   -webkit-transition: background .5s; }
+
+.success {
+  background-color: #fff; }
 
 .side-menu {
   background-color: #282C34;
